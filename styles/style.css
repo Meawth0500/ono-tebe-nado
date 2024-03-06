@@ -1,24 +1,25 @@
 .header {
     display: flex;
-    padding: 92px 24px 96px;
     justify-content: center;
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
+    padding: 92px 24px 96px 24px;
 }
 
 .logo {
-    width: 148px;
-    height: 105px;
+    width: 129.11px;
+    height: 104.65px;
     margin-right: 194px;
 }   
 
 .header__menu{
     display: flex;
-    gap: 12px;
+    gap: 13px;
     margin: 0 36px 0 0;
     align-items: center;
+    font-family: 'Raleway' sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
 }
 
 .header__links-list{
@@ -31,59 +32,69 @@
 }
 
 .addres_container  {
-    width: 240px;
+    width: 230px;
+    font-family: 'Raleway' sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    letter-spacing: 0%;
+    text-decoration: none;
+    
 }
 
 .addres {
     color: black;
+    
+}
+
+.box {
+    height: 757px;
+    margin: auto;
+    background-image: url(../images/cover.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .overlay {
+    display: flex;
+    flex-direction: column;
     height: 757px;
     margin: auto;
-    /* background: black;
-    opacity: 0.6; */
-    background-image: url(../images/cover.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .cover-title {
-    padding: 165px 50px 237px 50px;
     color: rgb(255, 255, 255);
     font-family: sans-serif;
     font-size: 100px;
     font-weight: 700;
     line-height: 115%;
+    padding: 165px 50px 237px 50px;
+    display: flex;
 }
 
 .accent-span {
     display: flex;
-    margin-left: 50px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    flex-direction: column
 }
 
 .text-center {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
 .text-right {
     display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-.overlay-footer {
-    display: flex;
+    flex-direction: row-reverse
 }
 
 .span-footer {
-    margin-top: 85px;
     display: flex;
+    margin-top: -30px;
+    display: inline-block;
     justify-content: space-between;
     align-items: baseline;
     color: white;
@@ -98,16 +109,57 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: end;
-    box-sizing: border-box;
     background-color: transparent;
     cursor: pointer;
-    overflow: hidden;
-    padding: 12px 32px 11px 31px;
+    /* overflow: hidden; */
+    /* padding: 12px 32px 11px 31px; */
     font-size: 22px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0%;
     text-align: center;
+    box-sizing: border-box;
     border: 1px solid rgb(255, 255, 255);
     color: white;
+}
+
+.how-to {
+    padding: 179px 24px 146px 24px;
+}
+
+.how-to_titlee {
+    margin-left: 40px;
+    font-family: 'Raleway' sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0%;
+}
+
+.card title {
+    display: flex;
+    flex-direction: column
+}
+
+.card text{
+    display: flex;
+    flex-direction: column-reverse
+}
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.card {
+    display: flex;
+}
+
+.card-one {
+    display: flex;
+    width: 334px;
+    height: 563px;
+
 }
