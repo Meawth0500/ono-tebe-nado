@@ -79,22 +79,25 @@
 
 .overlay-footer {
     display: flex;
-    flex-direction: row;
-    margin: auto;
-    justify-content: space-between;
 }
 
-.text-dno {
+.span-footer {
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     color: white;
     font-family: sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
-    margin-left: 75px;
     text-transform: uppercase;
 }
 
 .button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
     box-sizing: border-box;
     background-color: transparent;
     cursor: pointer;
