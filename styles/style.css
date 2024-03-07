@@ -126,40 +126,35 @@
     padding: 179px 24px 146px 24px;
 }
 
-.how-to_titlee {
+.how-to_title {
     margin-left: 40px;
-    font-family: 'Raleway' sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 47px;
-    letter-spacing: 0%;
 }
 
-.card title {
+.card-position {
     display: flex;
-    flex-direction: column
-}
-
-.card text{
-    display: flex;
-    flex-direction: column-reverse
-}
-
-.card-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    list-style: none;
+    margin-top: 27px;
+    margin-left: 24px;
+    gap: 25px;
 }
 
 .card {
-    display: flex;
+    position: relative;
+    height: 563px;
+    width: 334px;
 }
 
 .card-one {
-    display: flex;
-    width: 334px;
-    height: 563px;
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.card-two {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card-thri {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+.card-title {
 
 }
