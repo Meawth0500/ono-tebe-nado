@@ -12,7 +12,7 @@
 1. Клонировать репозиторий:
 
 ```bash
-git clone https://example.com/ono-tebe-nado.git
+git clone https://github.com/Meawth0500/ono-tebe-nado.git
 ```
 
 2. Перейти в директорию проекта:
