@@ -1,120 +1,127 @@
-@font-face {
-    font-family: Raleway;
-    src:
-      url(./Raleway-Regular.woff2) format('woff2'),
-      url(./Raleway-Regular.woff) format('woff');
-    font-weight: normal;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: Raleway;
-    src:
-      url(./Raleway-Bold.woff2) format('woff2'),
-      url(./Raleway-Bold.woff) format('woff');
-    font-weight: bold;
-    font-display: swap;
-  }  
-
 .header {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    /* justify-content: center; */
     padding: 92px 24px 96px 24px;
+    grid-template-columns: 1fr min-content 1fr;
 }
 
 .logo {
-    width: 129.11px;
-    height: 104.65px;
-    margin-right: 194px;
+    display: flex;
+    width: 140px;
+    height: 105px;
 }   
 
 .header__menu{
     display: flex;
-    gap: 13px;
-    margin: 0 36px 0 0;
+    gap: 20px;
     align-items: center;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0%;
+    padding: 44px 39px 39px 26px;
 }
 
 .header__links-list{
+    display: flex;
     color: black ;
-}
-
-.list_marker{
-    width: 7px;
-    height: 7px;
-}
-
-.addres_container  {
-    width: 230px;
     font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 10%;
+    gap: 32px;
+    list-style-type: circle;
+}
+
+.list-item {
+    text-decoration: underline;
+}
+.nobullet{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.address_container  {
+    display: flex;
+    justify-self: end;
+    flex-direction: column;
+    font-size: 19px;
     font-weight: 400;
     line-height: 24.3px;
     letter-spacing: 0%;
     text-decoration: none;
-    
+    margin-top: 4px;
+    margin-right: 55px;
 }
 
-.addres {
+.address {
     color: black;
-    
 }
 
 .box {
     width: 1100px;
-    height: 757px;
+    min-height: 757px;
     background-image: url(../images/cover.jpg);
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 .overlay {
-    display: flex;
-    flex-direction: column;
-    gap: 135px;
+    background: rgba(0, 0, 0, 0.6); 
     height: 100%;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    position: absolute;
+    top: 0; 
+    right: 0;
+    z-index: 2;
 }
 
 .cover-title {
     color: rgb(255, 255, 255);
-    font-family: 'Raleway' sans-serif;
     font-size: 100px;
     font-weight: 700;
     line-height: 100%;
     text-transform: uppercase;
+    padding: 87px 10px 67px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+
 }
 
 .accent-span {
-    display: flex;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    flex-direction: column;
-    letter-spacing: 0.3em;
+    position: relative;
+    z-index: 2;
+
 }
 
 .text-left{
-    margin-top: 175px;
-    margin-left: 50px;
+ letter-spacing: 0.3em;
 }
 
 .text-center {
-    display: flex;
-    align-items: center;
-    margin-top: 25px;
-    margin-left: -150px;
+    text-align: center;
+    letter-spacing: 0.3em;
+
 }
 
 .text-right {
     display: flex;
-    flex-direction: row;
-    margin-top: 21px;
-    margin-left: 635px;
+    justify-content: end;
+    letter-spacing: 0.6em;
+
+}
+
+.letter-spacing-extended{
+    letter-spacing: 0.6em;
+
+}
+
+.letter-spacing-extended-center{
+    letter-spacing: 0.7em;
+    
+}
+
+.letter-spacing-extended_right{
+letter-spacing: 0.3em;
 }
 
 .cover__description {
@@ -130,34 +137,22 @@
     font-weight: 400;
     line-height: 28px;
     text-transform: uppercase;
+    position: relative;
+    z-index: 3;
 }
 
-.letter-spacing-extended{
-    display: inline-block;
-    margin-top: -100px;
-    margin-left: 240px;
-}
-
-.letter-spacing-extended-center{
-    margin-top: -100px;
-    margin-left: 430px;
-}
-
-.letter-spacing-extended_right{
-    margin-left: 30px;
+.cover__description{
+    padding-left: 40px;
+    padding-right: 12px;
 }
 
 .cover__description-text {
-    font-family: sans-serif;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 28px;
     color: white;
     text-transform: uppercase;
-    width: 637px;
-    height: 28px;
-    margin-left: 35px;
-    letter-spacing: 0.1em;
+    letter-spacing: 3px;
 }
 
 .bet-button {
@@ -166,26 +161,26 @@
     justify-content: end;
     background-color: transparent;
     cursor: pointer;
-    overflow: hidden;
     padding: 12px 32px 11px 31px;
-    font-size: 22px;
-    font-weight: 400;
+    font-size: 21px;
+    font-weight: 500;
     line-height: 26px;
     box-sizing: border-box;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid currentColor;
     color: white;
     width: 256px;
     height: 51px;
     text-align: center;
     text-transform: uppercase;
+    font-family: inherit;
 }
 
 .lots {
-    padding: 179px 24px 146px 0px;
+    padding: 170px 24px 146px 0px;
 }
 
 .lots__heading {
-    margin-left: 40px;
+    margin-left: 65px;
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 700;
@@ -195,6 +190,7 @@
 
 .lots__card-list-item {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 27px;
     margin-left: 24px;
     gap: 25px;
@@ -214,7 +210,7 @@
 
 .card {
     position: relative;
-    height: 563px;
+    min-height: 563px;
     width: 334px;
     background-size: cover;
     background-position: center;
@@ -224,10 +220,13 @@
     display: flex;
     flex-direction: column;
     padding: 51px 40px 48px 40px;
+    position: relative;
+    z-index: 3;
 }
 
 .card_style_one{
     margin-top: 238px;
+    
 }
 
 .card_style_two{
@@ -235,54 +234,63 @@
 }
 
 .card_style_thri{
-    margin-top: 90px;
+    margin-top: 95px;
 }
 
 .card__title {
     color: white;
-    font-family: Raleway;
     font-size: 22px;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0%;
     text-align: left;
-    text-decoration-line: underline;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-decoration: underline;
 }
-
 .card__text{
+    position: relative;
     color: white;
     font-size: 20px;
     font-weight: 400;
     line-height: 120%;
     letter-spacing: 0%;
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(4, 4, 4);
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .how-to-footer {
     display: flex;
     padding-top: 30px ;
-    padding-left: 40px;
+    padding-left: 65px;
 }
 
 .lots__look-more-link{
     font-size: 20px;
     font-weight: 400;
-    line-height: 23px;
+    line-height: 24px;
+    text-transform: lowercase;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .about{
     display: flex;
-    padding: 0px 24px 180px 24px;
+    padding: 0px 24px 175px 24px;
 }
 
 .about_border_image{
     margin-top: 35px;
     margin-left: 47px;
-    width: 240px;
+    width: 250px;
     height: 240px;
     border: 1px solid black;
     background-color: black;
-    border-radius: 100%;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -291,8 +299,8 @@
 
 .about_image{
     display: flex;
-    width: 136px;
-    height: 102px;
+    width: 150px;
+    height: 120px;
     margin: auto;
 }
 
@@ -300,7 +308,7 @@
     display: flex;
     flex-direction: column;
     width: 693px;
-    height: 449px;
+    gap: 25px;
     margin-top: 136px;
     margin-left: 72px;
     margin-right: 29px;
@@ -311,18 +319,18 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 47px;
-    letter-spacing: 0%;
+    letter-spacing: 1%;
 }
 
-.about_tex_one {
-    margin-top: 100px;
+.about_text--info{
+    padding: 75px 0 0 0;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
 }
 
-.about_tex_two{
-    margin-top: 24px;
+.about_text--info:last-child{
+    padding: 0px;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -346,12 +354,14 @@
 .footer_nav{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     text-align:center;
     list-style: none;
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
+    letter-spacing: 0.01em;
+    text-transform: lowercase;
 }
 
 .text-decoration{
@@ -360,8 +370,6 @@
 
 .footer_cocial{
     display: flex;
-    width: 240px;
-    height: 48px;
     gap: 48px;
 }
 
