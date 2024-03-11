@@ -11,14 +11,14 @@
     height: 105px;
 }   
 
-.header__menu{
+.header__menu {
     display: flex;
     gap: 20px;
     align-items: center;
     padding: 44px 39px 39px 26px;
 }
 
-.header__links-list{
+.header__links-list {
     display: flex;
     color: black ;
     font-size: 18px;
@@ -32,12 +32,12 @@
 .list-item {
     text-decoration: underline;
 }
-.nobullet{
+.nobullet {
     list-style-type: none;
     text-decoration: none;
 }
 
-.address_container  {
+.address_container {
     display: flex;
     justify-self: end;
     flex-direction: column;
@@ -93,7 +93,7 @@
 
 }
 
-.text-left{
+.text-left {
  letter-spacing: 0.3em;
 }
 
@@ -110,17 +110,17 @@
 
 }
 
-.letter-spacing-extended{
+.letter-spacing-extended {
     letter-spacing: 0.6em;
 
 }
 
-.letter-spacing-extended-center{
+.letter-spacing-extended-center {
     letter-spacing: 0.7em;
     
 }
 
-.letter-spacing-extended_right{
+.letter-spacing-extended_right {
 letter-spacing: 0.3em;
 }
 
@@ -128,7 +128,7 @@ letter-spacing: 0.3em;
     display: flex !important;
     flex-direction: row;
     padding:  0 0 60px 0;
-    display: inline-block;
+    /* display: inline-block; */
     justify-content: space-around;
     align-items: baseline;
     color: white;
@@ -139,9 +139,6 @@ letter-spacing: 0.3em;
     text-transform: uppercase;
     position: relative;
     z-index: 3;
-}
-
-.cover__description{
     padding-left: 40px;
     padding-right: 12px;
 }
@@ -216,7 +213,7 @@ letter-spacing: 0.3em;
     background-position: center;
 }
 
-.card-info{
+.card-info {
     display: flex;
     flex-direction: column;
     padding: 51px 40px 48px 40px;
@@ -224,16 +221,16 @@ letter-spacing: 0.3em;
     z-index: 3;
 }
 
-.card_style_one{
+.card_style_one {
     margin-top: 238px;
     
 }
 
-.card_style_two{
+.card_style_two {
     margin-top: 0px;
 }
 
-.card_style_thri{
+.card_style_thri {
     margin-top: 95px;
 }
 
@@ -247,7 +244,7 @@ letter-spacing: 0.3em;
     text-transform: uppercase;
     text-decoration: underline;
 }
-.card__text{
+.card__text {
     position: relative;
     color: white;
     font-size: 20px;
@@ -269,7 +266,7 @@ a:link {
     padding-left: 65px;
 }
 
-.lots__look-more-link{
+.lots__look-more-link {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
@@ -278,12 +275,12 @@ a:link {
     cursor: pointer;
 }
 
-.about{
+.about {
     display: flex;
     padding: 0px 24px 175px 24px;
 }
 
-.about_border_image{
+.about_border_image {
     margin-top: 35px;
     margin-left: 47px;
     width: 250px;
@@ -297,14 +294,14 @@ a:link {
     object-fit: contain;
 }
 
-.about_image{
+.about_image {
     display: flex;
     width: 150px;
     height: 120px;
     margin: auto;
 }
 
-.about_text{
+.about_text {
     display: flex;
     flex-direction: column;
     width: 693px;
@@ -314,7 +311,7 @@ a:link {
     margin-right: 29px;
 }
 
-.about_title{
+.about_title {
     text-transform: uppercase;
     font-size: 40px;
     font-weight: 700;
@@ -322,28 +319,28 @@ a:link {
     letter-spacing: 1%;
 }
 
-.about_text--info{
+.about_text--info {
     padding: 75px 0 0 0;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
 }
 
-.about_text--info:last-child{
+.about_text--info:last-child {
     padding: 0px;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 50px 88px 50px;
 }
 
-.addres_container_foter{
+.addres_container_foter {
     width: 240px;
     font-size: 18px;
     font-weight: 400;
@@ -351,7 +348,7 @@ a:link {
     letter-spacing: 0%;
     text-decoration: none;
 }
-.footer_nav{
+.footer_nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -364,11 +361,11 @@ a:link {
     text-transform: lowercase;
 }
 
-.text-decoration{
+.text-decoration {
     text-decoration: underline;
 }
 
-.footer_cocial{
+.footer_cocial {
     display: flex;
     gap: 48px;
 }
