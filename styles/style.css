@@ -83,13 +83,11 @@
     display: flex;
     flex-direction: column;
     gap: 23px;
-
 }
 
 .accent-span {
     position: relative;
     z-index: 2;
-
 }
 
 .text-left {
@@ -110,11 +108,11 @@
     letter-spacing: 0.6em;
 }
 
-.letter-spacing-extended-right{
+.letter-spacing-extended-right {
     letter-spacing: 0.3em;
 }
 
-.letter-spacing-none{
+.letter-spacing-none {
     letter-spacing: 0em;
 }
 
@@ -224,7 +222,6 @@
     text-align: left;
     text-transform: uppercase;
     text-decoration: underline;
-
 }
 .card__text {
     position: relative;
