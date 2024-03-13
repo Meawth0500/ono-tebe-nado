@@ -90,6 +90,10 @@
     z-index: 2;
 }
 
+.accent-span:last-child{
+    text-align: end;
+}
+
 .text-left {
  letter-spacing: 0.3em;
 }
@@ -100,16 +104,11 @@
 }
 
 .text-right {
-    text-align: end;
-    letter-spacing: 0.6em;
+    letter-spacing: 0.3em;
 }
 
 .letter-spacing-extended {
     letter-spacing: 0.6em;
-}
-
-.letter-spacing-extended-right {
-    letter-spacing: 0.3em;
 }
 
 .letter-spacing-none {
@@ -119,7 +118,7 @@
 .cover__description {
     display: flex;
     flex-direction: row;
-    padding:  0 0 60px 0;
+    padding:  0 0 50px 0;
     justify-content: space-around;
     align-items: baseline;
     color: white;
@@ -209,7 +208,7 @@
     padding: 51px 40px 48px 40px;
     position: relative;
     z-index: 3;
-    height: 100%;
+    min-height: 563px;
     justify-content: space-between ;
 }
 
